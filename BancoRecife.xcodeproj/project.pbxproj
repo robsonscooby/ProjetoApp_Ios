@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		575F0EFA20AB9D1D00E1AD99 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F0EF920AB9D1D00E1AD99 /* ConfigViewController.swift */; };
+		575F0EFC20ABA27900E1AD99 /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F0EFB20ABA27900E1AD99 /* Cliente.swift */; };
+		57A827EF20ACF29D00C60C60 /* Banco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A827EE20ACF29D00C60C60 /* Banco.swift */; };
 		57E4086720A767C700D94D9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E4086620A767C700D94D9D /* AppDelegate.swift */; };
 		57E4086920A767C700D94D9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E4086820A767C700D94D9D /* ViewController.swift */; };
 		57E4086C20A767C700D94D9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57E4086A20A767C700D94D9D /* Main.storyboard */; };
 		57E4086E20A767C700D94D9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57E4086D20A767C700D94D9D /* Assets.xcassets */; };
 		57E4087120A767C700D94D9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57E4086F20A767C700D94D9D /* LaunchScreen.storyboard */; };
+		57E4087920A77D3900D94D9D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E4087820A77D3900D94D9D /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		575F0EF920AB9D1D00E1AD99 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		575F0EFB20ABA27900E1AD99 /* Cliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
+		57A827EE20ACF29D00C60C60 /* Banco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banco.swift; sourceTree = "<group>"; };
 		57E4086320A767C700D94D9D /* BancoRecife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BancoRecife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E4086620A767C700D94D9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57E4086820A767C700D94D9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,7 @@
 		57E4086D20A767C700D94D9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57E4087020A767C700D94D9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57E4087220A767C700D94D9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57E4087820A77D3900D94D9D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57A827F120ACF5E700C60C60 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				57E4087820A77D3900D94D9D /* HomeViewController.swift */,
+				575F0EF920AB9D1D00E1AD99 /* ConfigViewController.swift */,
+				57E4086820A767C700D94D9D /* ViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		57A827F220ACF65700C60C60 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				57A827EE20ACF29D00C60C60 /* Banco.swift */,
+				575F0EFB20ABA27900E1AD99 /* Cliente.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		57A827F320ACFC5900C60C60 /* suport */ = {
+			isa = PBXGroup;
+			children = (
+				57E4086F20A767C700D94D9D /* LaunchScreen.storyboard */,
+				57E4086D20A767C700D94D9D /* Assets.xcassets */,
+			);
+			name = suport;
+			sourceTree = "<group>";
+		};
+		57A827F420ACFDD600C60C60 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				57E4086A20A767C700D94D9D /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		57E4085A20A767C700D94D9D = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +98,11 @@
 		57E4086520A767C700D94D9D /* BancoRecife */ = {
 			isa = PBXGroup;
 			children = (
+				57A827F420ACFDD600C60C60 /* view */,
+				57A827F320ACFC5900C60C60 /* suport */,
+				57A827F220ACF65700C60C60 /* models */,
+				57A827F120ACF5E700C60C60 /* controllers */,
 				57E4086620A767C700D94D9D /* AppDelegate.swift */,
-				57E4086820A767C700D94D9D /* ViewController.swift */,
-				57E4086A20A767C700D94D9D /* Main.storyboard */,
-				57E4086D20A767C700D94D9D /* Assets.xcassets */,
-				57E4086F20A767C700D94D9D /* LaunchScreen.storyboard */,
 				57E4087220A767C700D94D9D /* Info.plist */,
 			);
 			path = BancoRecife;
@@ -136,7 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				57E4086920A767C700D94D9D /* ViewController.swift in Sources */,
+				57A827EF20ACF29D00C60C60 /* Banco.swift in Sources */,
 				57E4086720A767C700D94D9D /* AppDelegate.swift in Sources */,
+				575F0EFA20AB9D1D00E1AD99 /* ConfigViewController.swift in Sources */,
+				57E4087920A77D3900D94D9D /* HomeViewController.swift in Sources */,
+				575F0EFC20ABA27900E1AD99 /* Cliente.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
